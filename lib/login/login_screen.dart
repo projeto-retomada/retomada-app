@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:retomada/first/first_screen.dart';
+import 'package:retomada/home_page/home_screen.dart';
 
 class LoginPage extends StatefulWidget {
   LoginPage({Key key, this.title}) : super(key: key);
@@ -107,7 +108,7 @@ class _LoginPageState extends State<LoginPage> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => FirstScreen()));
+                                      builder: (context) => HomeScreen()));
                             },
                             child: Text(
                               "Login",
