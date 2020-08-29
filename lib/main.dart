@@ -9,7 +9,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Retomada',
-      theme: ThemeData(fontFamily: 'Montserrat', backgroundColor: Colors.white),
+      theme: ThemeData(
+        fontFamily: 'Montserrat',
+        backgroundColor: Colors.white,
+      ),
       home: LoginPage(title: 'Login'),
     );
   }
