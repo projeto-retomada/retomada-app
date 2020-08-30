@@ -38,7 +38,7 @@ class NavigationDrawer extends StatelessWidget {
             accountEmail: Text("imisspadme@universe.com"),
             accountName: Text(
               "Darth Vader",
-              style: TextStyle(fontSize: 18),
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
             currentAccountPicture: new CircleAvatar(
               backgroundColor: Color.fromRGBO(31, 150, 159, 1),
@@ -50,7 +50,7 @@ class NavigationDrawer extends StatelessWidget {
               children: <Widget>[
                 Icon(
                   Icons.person,
-                  size: 32,
+                  size: 25,
                   color: Color.fromRGBO(32, 153, 160, 1),
                 ),
                 SizedBox(
@@ -58,7 +58,7 @@ class NavigationDrawer extends StatelessWidget {
                   height: 70,
                 ),
                 Text("Perfil",
-                    style: TextStyle(fontSize: 17, fontFamily: 'Montserrat')) //
+                    style: TextStyle(fontSize: 14, fontFamily: 'Montserrat')) //
               ],
             ),
             onTap: () {
@@ -71,7 +71,7 @@ class NavigationDrawer extends StatelessWidget {
               children: <Widget>[
                 Icon(
                   Icons.home,
-                  size: 32,
+                  size: 25,
                   color: Color.fromRGBO(32, 153, 160, 1),
                 ),
                 SizedBox(
@@ -79,7 +79,7 @@ class NavigationDrawer extends StatelessWidget {
                   height: 70,
                 ),
                 Text("Locais",
-                    style: TextStyle(fontSize: 17, fontFamily: 'Montserrat')) //
+                    style: TextStyle(fontSize: 14, fontFamily: 'Montserrat')) //
               ],
             ),
             onTap: () {
@@ -92,7 +92,7 @@ class NavigationDrawer extends StatelessWidget {
               children: <Widget>[
                 Icon(
                   Icons.check_box,
-                  size: 32,
+                  size: 25,
                   color: Color.fromRGBO(32, 153, 160, 1),
                 ),
                 SizedBox(
@@ -100,7 +100,7 @@ class NavigationDrawer extends StatelessWidget {
                   height: 70,
                 ),
                 Text("Atividades",
-                    style: TextStyle(fontSize: 17, fontFamily: 'Montserrat')) //
+                    style: TextStyle(fontSize: 14, fontFamily: 'Montserrat')) //
               ],
             ),
             onTap: () {
@@ -113,7 +113,7 @@ class NavigationDrawer extends StatelessWidget {
               children: <Widget>[
                 Icon(
                   Icons.people,
-                  size: 32,
+                  size: 25,
                   color: Color.fromRGBO(32, 153, 160, 1),
                 ),
                 SizedBox(
@@ -121,7 +121,7 @@ class NavigationDrawer extends StatelessWidget {
                   height: 70,
                 ),
                 Text("Usuários",
-                    style: TextStyle(fontSize: 17, fontFamily: 'Montserrat')) //
+                    style: TextStyle(fontSize: 14, fontFamily: 'Montserrat')) //
               ],
             ),
             onTap: () {
@@ -134,7 +134,7 @@ class NavigationDrawer extends StatelessWidget {
               children: <Widget>[
                 Icon(
                   Icons.content_paste,
-                  size: 32,
+                  size: 25,
                   color: Color.fromRGBO(32, 153, 160, 1),
                 ),
                 SizedBox(
@@ -142,7 +142,7 @@ class NavigationDrawer extends StatelessWidget {
                   height: 70,
                 ),
                 Text("Critérios Sanitários",
-                    style: TextStyle(fontSize: 17, fontFamily: 'Montserrat')) //
+                    style: TextStyle(fontSize: 14, fontFamily: 'Montserrat')) //
               ],
             ),
             onTap: () {
@@ -157,7 +157,7 @@ class NavigationDrawer extends StatelessWidget {
               children: <Widget>[
                 Icon(
                   Icons.healing,
-                  size: 32,
+                  size: 25,
                   color: Color.fromRGBO(32, 153, 160, 1),
                 ),
                 SizedBox(
@@ -165,7 +165,7 @@ class NavigationDrawer extends StatelessWidget {
                   height: 65,
                 ),
                 Text("Relatórios de Saúde",
-                    style: TextStyle(fontSize: 17, fontFamily: 'Montserrat')) //
+                    style: TextStyle(fontSize: 14, fontFamily: 'Montserrat')) //
               ],
             ),
             onTap: () {},
@@ -175,7 +175,7 @@ class NavigationDrawer extends StatelessWidget {
               children: <Widget>[
                 Icon(
                   Icons.exit_to_app,
-                  size: 32,
+                  size: 25,
                   color: Colors.grey,
                 ),
                 SizedBox(
@@ -183,7 +183,7 @@ class NavigationDrawer extends StatelessWidget {
                   height: 65,
                 ),
                 Text("Sair",
-                    style: TextStyle(fontSize: 17, fontFamily: 'Montserrat')) //
+                    style: TextStyle(fontSize: 14, fontFamily: 'Montserrat', color: Colors.grey)) //
               ],
             ),
             onTap: () {},

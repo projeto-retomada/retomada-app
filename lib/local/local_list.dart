@@ -20,7 +20,7 @@ class LocalList extends StatelessWidget {
                 delegate: SliverChildListDelegate([
               Text(
                 "Locais",
-                style: TextStyle(fontSize: 16),
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
               Column(
                 children: <Widget>[
