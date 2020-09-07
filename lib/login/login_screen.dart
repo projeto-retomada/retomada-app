@@ -97,7 +97,7 @@ class _LoginPageState extends State<LoginPage> {
                         child: SizedBox(
                           width: double.infinity,
                           height: 50,
-                          child: FlatButton(
+                          child: RaisedButton(
                             color: Color.fromRGBO(32, 153, 160, 1),
                             textColor: Colors.white,
                             disabledColor: Colors.grey,

@@ -3,6 +3,7 @@ import 'package:retomada/atividades/atividades.dart';
 import 'package:retomada/criterios_sanitarios/criterios_sanitarios.dart';
 import 'package:retomada/local/local_list.dart';
 import 'package:retomada/perfil/perfil.dart';
+import 'package:retomada/relatorios_de_saude/relatorios_de_saude.dart';
 import 'package:retomada/usuarios/usuarios_list.dart';
 
 class RetomadaAppBar extends AppBar {
@@ -168,7 +169,12 @@ class NavigationDrawer extends StatelessWidget {
                     style: TextStyle(fontSize: 14, fontFamily: 'Montserrat')) //
               ],
             ),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => RelatoriosDeSaudePage()));
+            },
           ),
           ListTile(
             title: Row(
@@ -183,7 +189,10 @@ class NavigationDrawer extends StatelessWidget {
                   height: 65,
                 ),
                 Text("Sair",
-                    style: TextStyle(fontSize: 14, fontFamily: 'Montserrat', color: Colors.grey)) //
+                    style: TextStyle(
+                        fontSize: 14,
+                        fontFamily: 'Montserrat',
+                        color: Colors.grey)) //
               ],
             ),
             onTap: () {},
