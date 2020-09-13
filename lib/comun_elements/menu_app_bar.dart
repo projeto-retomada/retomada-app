@@ -6,7 +6,6 @@ import 'package:retomada/perfil/perfil.dart';
 import 'package:retomada/relatorios_de_saude/relatorios_de_saude.dart';
 import 'package:retomada/usuarios/usuarios_list.dart';
 
-
 class RetomadaAppBar extends AppBar {
   RetomadaAppBar({Key key, Widget title})
       : super(
