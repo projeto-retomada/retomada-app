@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:retomada/comun_elements/default-button.dart';
 import 'package:retomada/comun_elements/menu_app_bar.dart';
 
 class PerfilPage extends StatelessWidget {
@@ -20,14 +21,11 @@ class PerfilPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Icon(
-                    Icons.info,
-                    size: 30,
+                  DefaultButton(
+                    'Botão Bolado',
+                    59403,
+                    onPressed: () {},
                   ),
-                  Padding(
-                    padding: EdgeInsets.only(left: 5, right: 5),
-                  ),
-                  Text('Perfil'),
                 ],
               ),
             ],
