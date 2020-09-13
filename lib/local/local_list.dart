@@ -1,11 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:retomada/comun_elements/menu_app_bar.dart';
+import 'package:retomada/comun_elements/alert.dart';
 
 class LocalList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    double c_width = MediaQuery.of(context).size.width*0.64;
+    double c_width = MediaQuery.of(context).size.width * 0.64;
+    RetomadaAlert alert = new RetomadaAlert();
     return new Scaffold(
         appBar: RetomadaAppBar(),
         drawer: NavigationDrawer(),
@@ -26,14 +28,18 @@ class LocalList extends StatelessWidget {
                 children: <Widget>[
                   Card(
                     child: Container(
-                      padding: EdgeInsets.only(left: 10.0, right: 10.0, top: 15.0, bottom: 15.0),
+                      padding: EdgeInsets.only(
+                          left: 10.0, right: 10.0, top: 15.0, bottom: 15.0),
                       child: Column(
                         children: <Widget>[
                           Row(
                             children: <Widget>[
                               Align(
                                 alignment: Alignment.topLeft,
-                                child: Icon(Icons.home, color: Color.fromRGBO(31, 150, 159, 1),),
+                                child: Icon(
+                                  Icons.home,
+                                  color: Color.fromRGBO(31, 150, 159, 1),
+                                ),
                               ),
                               Container(
                                 padding: EdgeInsets.only(left: 10.0),
@@ -51,9 +57,10 @@ class LocalList extends StatelessWidget {
                             children: <Widget>[
                               Padding(
                                 padding: EdgeInsets.only(left: 35.0),
-                                child: Text("Lotação máxima 20 pessoas", style: TextStyle(
-                                    color: Colors.black38
-                                ),),
+                                child: Text(
+                                  "Lotação máxima 20 pessoas",
+                                  style: TextStyle(color: Colors.black38),
+                                ),
                               ),
                             ],
                           ),
