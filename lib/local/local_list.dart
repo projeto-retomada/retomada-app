@@ -46,11 +46,6 @@ class LocalList extends StatelessWidget {
                                 width: c_width,
                                 child: Text("Quadra de esportes"),
                               ),
-                              IconButton(
-                                icon: Icon(Icons.edit),
-                                color: Color.fromRGBO(31, 150, 159, 1),
-                                onPressed: () {},
-                              ),
                             ],
                           ),
                           Row(
