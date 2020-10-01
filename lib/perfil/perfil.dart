@@ -1,11 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:retomada/comun_elements/menu_app_bar.dart';
+import 'package:retomada/usuarios/logged_user.dart';
 
 class PerfilPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double c_width = MediaQuery.of(context).size.width * 0.64;
+    LoggedUser log = new LoggedUser();
     return new Scaffold(
         appBar: RetomadaAppBar(),
         drawer: NavigationDrawer(),
@@ -28,7 +30,7 @@ class PerfilPage extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 15),
                   child: Center(
                     child: Text(
-                      'Nome do Usuário',
+                      log.getNome(),
                       style: TextStyle(fontWeight: FontWeight.w600),
                     ),
                   ),

@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:retomada/first/first_screen.dart';
 import 'package:retomada/home_page/home_screen.dart';
+import 'package:retomada/services/usuarioService.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
 
 class LoginPage extends StatefulWidget {
   LoginPage({Key key, this.title}) : super(key: key);
@@ -13,6 +15,8 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   @override
+  TextEditingController emailController = new TextEditingController();
+  TextEditingController senhaController = new TextEditingController();
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
@@ -44,6 +48,7 @@ class _LoginPageState extends State<LoginPage> {
                       padding: EdgeInsets.only(
                           top: 20, bottom: 20, right: 30, left: 30),
                       child: TextFormField(
+                        controller: emailController,
                         decoration: InputDecoration(
                           labelText: "Digite seu usuário",
                           labelStyle: TextStyle(
@@ -69,6 +74,7 @@ class _LoginPageState extends State<LoginPage> {
                       padding: EdgeInsets.only(
                           top: 5, bottom: 20, right: 30, left: 30),
                       child: TextFormField(
+                        controller: senhaController,
                         obscureText: true,
                         decoration: InputDecoration(
                           labelText: "Digite sua senha",
@@ -105,10 +111,17 @@ class _LoginPageState extends State<LoginPage> {
                             padding: EdgeInsets.all(8.0),
                             splashColor: Color.fromRGBO(32, 153, 160, 1),
                             onPressed: () {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => HomeScreen()));
+                              if (emailController.text == '' || senhaController.text == '') {
+                                Alert(
+                                  context: context,
+                                  title: "Ooops!",
+                                  desc: "Os campos de usuário e senha são obrigatórios",
+                                  buttons: [],
+                                  image: Image.asset("assets/confused.png", width: 50,),
+                                ).show();
+                              } else {
+                                login(emailController.text, senhaController.text, context);
+                              }
                             },
                             child: Text(
                               "Login",
