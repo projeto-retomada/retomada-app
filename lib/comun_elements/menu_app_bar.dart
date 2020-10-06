@@ -85,7 +85,7 @@ class NavigationDrawer extends StatelessWidget {
             ),
             onTap: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => LocalList()));
+                  MaterialPageRoute(builder: (context) => LocaisPage()));
             },
           ),
           ListTile(

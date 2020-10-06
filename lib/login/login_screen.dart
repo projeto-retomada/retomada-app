@@ -1,7 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:retomada/first/first_screen.dart';
-import 'package:retomada/home_page/home_screen.dart';
 import 'package:retomada/services/usuarioService.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 
@@ -18,6 +16,7 @@ class _LoginPageState extends State<LoginPage> {
   TextEditingController emailController = new TextEditingController();
   TextEditingController senhaController = new TextEditingController();
   Widget build(BuildContext context) {
+
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: PreferredSize(

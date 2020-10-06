@@ -8,8 +8,7 @@ import 'package:retomada/usuarios/logged_user.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 
 void login(String email, String senha, context) async {
-  print('response');
-  var url = 'http://192.168.0.11:3333/login';
+  var url = 'http://192.168.1.35:3333/login';
 
   // Await the http get response, then decode the json-formatted response.
   var response = await http.post(
