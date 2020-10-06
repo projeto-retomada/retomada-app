@@ -20,10 +20,7 @@ class LoggedUser {
   int getInstituicao() {
     return id_instituicao;
   }
-}
-
   int getId() {
     return id_usuario;
   }
-
 }

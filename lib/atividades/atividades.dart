@@ -24,7 +24,7 @@ class _AtividadesPageState extends State<AtividadesPage> {
     try {
       List<Activity> listActivities = List();
       final response = await http
-          .get('http://192.168.0.11:3333/user/'+ log.getId().toString() +'/activity-note');
+          .get('http://192.168.1.35:3333/user/'+ log.getId().toString() +'/activity-note');
       if (response.statusCode == 200) {
         var decodedJson = jsonDecode(response.body);
         decodedJson.forEach((item) => listActivities.add(Activity.fromJson(item)));
