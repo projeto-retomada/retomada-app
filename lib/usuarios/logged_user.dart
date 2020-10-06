@@ -14,8 +14,13 @@ class LoggedUser {
     email = email_api;
     id_instituicao = id_instituicao_api;
   }
+
   String getNome() {
     return nome;
+  }
+
+  int getId() {
+    return id_usuario;
   }
 
 }
