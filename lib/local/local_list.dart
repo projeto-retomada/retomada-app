@@ -22,7 +22,7 @@ class _LocaisPageState extends State<LocaisPage> {
       List<Location> listLocations = List();
       LoggedUser log = new LoggedUser();
       final response = await http.get(
-          'http://192.168.1.32:3333/list-locations/?filters={"id_instituicao":' +
+          'http://192.168.0.11:3333/list-locations/?filters={"id_instituicao":' +
               log.getInstituicao().toString() +
               '}');
       if (response.statusCode == 200) {
