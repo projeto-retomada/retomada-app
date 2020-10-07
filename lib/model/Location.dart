@@ -27,7 +27,11 @@ class Location {
     descricao = json['descricao'];
     descricao_normalizada = json['descricao_normalizada'];
     lotacao_maxima = json['lotacao_maxima'];
-    aberto_fechado = json['aberto_fechado'];
+    if (json['aberto_fechado'] == 'A') {
+      aberto_fechado = 'Aberto';
+    } else {
+      aberto_fechado = 'Fechado';
+    }
     metadata = json['metadata'];
     id_instituicao = json['id_instituicao'];
   }
